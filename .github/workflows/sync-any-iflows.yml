@@ -31,7 +31,7 @@ jobs:
       image: engswee/flashpipe:2.x.x-lite
     env:
       HOST_TMN: p700163-tmn.hci.eu2.hana.ondemand.com
-      HOST_OAUTH: oauthasservices-e7c6abf64.eu1.hana.ondemand.com/oauth2/api/v1/token
+      HOST_OAUTH: api.eu2.hana.ondemand.com/oauth2/apitoken/v1?grant_type=client_credentials
       OAUTH_CLIENTID: ${{ secrets.DEV_USER_ID }}
       OAUTH_CLIENTSECRET: ${{ secrets.DEV_PASSWORD }}     
     steps:
