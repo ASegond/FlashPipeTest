@@ -34,6 +34,7 @@ jobs:
       HOST_OAUTH_PATH: oauthasservices-e7c6abf64.eu2.hana.ondemand.com/oauth2/api/v1/token
       OAUTH_CLIENTID: ${{ secrets.DEV_CLIENT_ID }}
       OAUTH_CLIENTSECRET: ${{ secrets.DEV_CLIENT_SECRET }}     
+      BASIC_USERID: ${{ secrets.DEV_USER_ID }}
     steps:
     - uses: actions/checkout@v2
     - name: 'Set GIT_SRC_DIR for sync_to_git_repository.sh'
