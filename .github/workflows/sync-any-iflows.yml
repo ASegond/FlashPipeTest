@@ -28,10 +28,10 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     container:
-      image: engswee/flashpipe:2.x.x-lite
+      image: engswee/flashpipe:2.3.0
     env:
       HOST_TMN: p700163-tmn.hci.eu2.hana.ondemand.com
-      HOST_OAUTH: api.eu2.hana.ondemand.com/oauth2/apitoken/v1?grant_type=client_credentials
+      HOST_OAUTH_PATH: oauthasservices-e7c6abf64.eu2.hana.ondemand.com/oauth2/api/v1/token
       OAUTH_CLIENTID: ${{ secrets.DEV_CLIENT_ID }}
       OAUTH_CLIENTSECRET: ${{ secrets.DEV_CLIENT_SECRET }}     
     steps:
