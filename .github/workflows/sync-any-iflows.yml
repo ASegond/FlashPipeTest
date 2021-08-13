@@ -35,6 +35,7 @@ jobs:
       OAUTH_CLIENTID: ${{ secrets.DEV_CLIENT_ID }}
       OAUTH_CLIENTSECRET: ${{ secrets.DEV_CLIENT_SECRET }}     
       BASIC_USERID: ${{ secrets.DEV_USER_ID }}
+      BASIC_PASSWORD: ${{ secrets.DEV_PASSWORD }} 
     steps:
     - uses: actions/checkout@v2
     - name: 'Set GIT_SRC_DIR for sync_to_git_repository.sh'
